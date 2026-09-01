@@ -1,0 +1,326 @@
+/* ---------------------------------------------------------------
+   Tokens
+   Charter leads the stack deliberately: Matthew Carter drew it to
+   hold up at small sizes on low-resolution output, which is exactly
+   what a printed resume is. Cambria and Sitka cover Windows,
+   Georgia covers everything else.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper:    #FDFCFA;
+  --desk:     #EDEAE4;
+  --ink:      #2B2622;
+  --ink-soft: #6C655C;
+  --rule:     #DCD7CD;
+  --link:     #37476B;
+
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia,
+           "Times New Roman", serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--desk);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------------------------------------------------------------
+   The sheet
+   --------------------------------------------------------------- */
+
+.sheet {
+  max-width: 44rem;
+  margin: 3rem auto 4rem;
+  padding: 3.25rem 3rem 2.5rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+}
+
+/* ---------------------------------------------------------------
+   Masthead
+   --------------------------------------------------------------- */
+
+.masthead h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+}
+
+.masthead .headline {
+  margin: 0.5rem 0 0;
+  font-style: italic;
+  font-size: 1.0625rem;
+  color: var(--ink-soft);
+}
+
+.masthead .contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.4rem;
+  margin: 1.1rem 0 0;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+
+/* Lead paragraph — the summary directly under the masthead. */
+.masthead + p {
+  margin: 2rem 0 0;
+  font-size: 1.09375rem;
+}
+
+/* ---------------------------------------------------------------
+   Sections
+   Rule sits above each heading, so the masthead needs no divider
+   of its own and the page never doubles up a line.
+   --------------------------------------------------------------- */
+
+h2 {
+  margin: 2.5rem 0 1.1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.005em;
+}
+
+h3 {
+  margin: 1.6rem 0 0;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h2 + h3 { margin-top: 0; }
+
+/* The line immediately after a role heading: dates, employer, stack. */
+h3 + p {
+  margin: 0.2rem 0 0;
+  font-size: 0.9375rem;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+h3 + p em,
+h3 + p i { font-style: normal; }
+
+p { margin: 0.75rem 0 0; }
+
+/* ---------------------------------------------------------------
+   Lists — an en dash marker instead of a disc: quieter on screen,
+   and it survives print and PDF text extraction cleanly.
+   --------------------------------------------------------------- */
+
+ul {
+  margin: 0.7rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  margin: 0.4rem 0 0;
+  padding-left: 1.1em;
+}
+
+li::before {
+  content: "\2013";
+  position: absolute;
+  left: 0;
+  color: var(--ink-soft);
+}
+
+strong { font-weight: 600; }
+
+/* ---------------------------------------------------------------
+   Links — the only colour on the page, and only where it does work.
+   --------------------------------------------------------------- */
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(55, 71, 107, 0.3);
+}
+
+a:hover { border-bottom-color: var(--link); }
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+.updated {
+  margin-top: 2.75rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.8125rem;
+  color: var(--ink-soft);
+}
+
+/* ---------------------------------------------------------------
+   Print button
+   --------------------------------------------------------------- */
+
+.print-button {
+  position: fixed;
+  top: 1.75rem;
+  right: 1.75rem;
+  padding: 0.5rem 0.9rem;
+  background: var(--paper);
+  color: var(--link);
+  border: 1px solid var(--rule);
+  font-family: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: border-color 120ms ease;
+}
+
+.print-button:hover { border-color: var(--link); }
+
+.print-button:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------
+   Narrow screens — drop the desk framing, the sheet becomes the page
+   --------------------------------------------------------------- */
+
+@media (max-width: 46rem) {
+  html { font-size: 15px; }
+
+  body { background: var(--paper); }
+
+  .sheet {
+    margin: 0;
+    padding: 2.25rem 1.5rem 2rem;
+    border: 0;
+    max-width: none;
+  }
+
+  .masthead h1 { font-size: 1.75rem; }
+
+  .print-button {
+    top: auto;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    box-shadow: 0 1px 3px rgba(43, 38, 34, 0.15);
+  }
+}
+
+/* ---------------------------------------------------------------
+   Print — this is the deliverable, not an afterthought.
+   Ink goes to black for contrast and for OCR in applicant tracking
+   systems. Links stay clickable in the PDF but lose their colour.
+   --------------------------------------------------------------- */
+
+@media print {
+
+  @page {
+    size: letter;
+    margin: 0.55in 0.65in;
+  }
+
+  html { font-size: 12px; }
+
+  html, body {
+    background: #fff;
+    color: #000;
+  }
+
+  body {
+    font-size: 10.5pt;
+    line-height: 1.4;
+  }
+
+  .sheet {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #fff;
+  }
+
+  .print-button { display: none; }
+
+  a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 0;
+  }
+
+  .masthead h1 { font-size: 19pt; }
+
+  .masthead .headline {
+    font-size: 10.5pt;
+    margin-top: 0.25rem;
+  }
+
+  .masthead .contact {
+    font-size: 9pt;
+    gap: 0.15rem 1rem;
+    margin-top: 0.6rem;
+    color: #000;
+  }
+
+  .masthead + p { margin-top: 1rem; }
+
+  h2 {
+    font-size: 10.5pt;
+    margin: 15pt 0 7pt;
+    padding-top: 6pt;
+    border-top: 0.5pt solid #999;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-size: 11pt;
+    margin-top: 10pt;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  h3 + p {
+    font-size: 9.5pt;
+    color: #333;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  ul {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  li { margin-top: 2pt; }
+
+  li, p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  li::before { color: #666; }
+
+  .updated {
+    font-size: 8pt;
+    color: #666;
+    margin-top: 14pt;
+    padding-top: 6pt;
+    border-top: 0.5pt solid #999;
+  }
+}

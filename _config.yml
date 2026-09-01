@@ -1,0 +1,22 @@
+# If you publish at https://<username>.github.io/resume/ then baseurl must be
+# "/resume" (no trailing slash). If you publish at https://<username>.github.io/
+# from a repo named <username>.github.io, leave baseurl empty.
+baseurl: ""
+url: ""
+
+title: "Vincent — Resume"
+description: "Resume of Vincent, AI/ML engineer based in Ottawa, Ontario."
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
+# No theme gem — the layout in _layouts/ is the whole design.
+plugins: []
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

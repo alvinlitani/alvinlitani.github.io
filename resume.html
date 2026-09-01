@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.name }} — Resume</title>
+  <meta name="description" content="{{ page.name }}. {{ page.headline }}. {{ page.location }}.">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="{{ page.name }} — Resume">
+  <meta property="og:description" content="{{ page.headline }}">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+
+  <button type="button" class="print-button" id="print-button">Print or save as PDF</button>
+
+  <main class="sheet">
+
+    <header class="masthead">
+      <h1>{{ page.name }}</h1>
+      {% if page.headline %}<p class="headline">{{ page.headline }}</p>{% endif %}
+      <p class="contact">
+        {% if page.location %}<span>{{ page.location }}</span>{% endif %}
+        {% for item in page.contact %}
+          <span>{% if item.url %}<a href="{{ item.url }}">{{ item.text }}</a>{% else %}{{ item.text }}{% endif %}</span>
+        {% endfor %}
+      </p>
+    </header>
+
+    {{ content }}
+
+    <footer class="updated">Updated {{ site.time | date: "%B %Y" }}</footer>
+
+  </main>
+
+  <script>
+    document.getElementById('print-button').addEventListener('click', function () {
+      window.print();
+    });
+  </script>
+
+</body>
+</html>
