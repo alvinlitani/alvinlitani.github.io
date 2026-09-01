@@ -1,15 +1,15 @@
 ---
 layout: resume
-name: Vincent
+name: Alvin Litani Liauw
 headline: Applied machine learning, data pipelines, and production ML services
 location: Ottawa, Ontario, Canada
 contact:
-  - text: you@example.com
-    url: mailto:you@example.com
+  - text: alvin.litani@gmail.com
+    url: mailto:alvin.litani@gmail.com
   - text: github.com/alvinlitani
     url: https://github.com/alvinlitani
-  - text: linkedin.com/in/your-handle
-    url: https://linkedin.com/in/your-handle
+  - text: linkedin.com/in/alvin-litani
+    url: https://linkedin.com/in/alvin-litani
 ---
 
 Computer science graduate with a graduate certificate in AI software development,
@@ -48,13 +48,13 @@ sourcing and feature engineering through to a deployed, documented service.
 - Remote administrative and reporting support alongside full-time study and portfolio work.
 
 ### Warehouse supervisor
-*PT Bangun Prima Sukses — 2019 to 2023, [City], Indonesia*
+*PT Bangun Prima Sukses — 2019 to 2023, Jakarta, Indonesia*
 
 - Supervised daily warehouse operations, staffing, and inventory accuracy.
 - [Add one line with a number: headcount supervised, throughput, or an error rate you improved.]
 
 ### Technical manager
-*[Consultancy name] — 2015 to 2019, [City], Indonesia*
+*PT Perkasa Pilar Utama — 2015 to 2019, Jakarta, Indonesia*
 
 - Led client-facing technical engagements, including IoT pilot deployments and evaluation.
 - Negotiated partner and vendor agreements, and translated client requirements into delivery scope.
@@ -74,7 +74,7 @@ sourcing and feature engineering through to a deployed, documented service.
 ## Education
 
 ### Graduate certificate, artificial intelligence software development
-*[Institution name] — completed August 2025*
+*Algonquin College — completed August 2025*
 
 ### Bachelor of Computer Science and Technology
 *University of Sydney — 2008 to 2011*
