@@ -1,6 +1,6 @@
 ---
 layout: resume
-name: Alvin Litani Liauw
+fullname: Alvin Litani Liauw
 headline: Applied machine learning, data pipelines, and production ML services
 location: Ottawa, Ontario, Canada
 contact:

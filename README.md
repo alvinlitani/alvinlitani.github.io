@@ -66,6 +66,10 @@ Name, headline, location, and contact links live in the YAML front matter at the
 top of `index.md`, not in the body. Add or remove contact entries freely — they
 lay out in a wrapping row.
 
+The name key is `fullname`, not `name`. Jekyll reserves `page.name` for the
+source filename, so a front matter `name:` is silently ignored and the masthead
+renders "index.md" instead of yours.
+
 ## The PDF
 
 The button calls `window.print()`. In the dialog, choose **Save as PDF** as the

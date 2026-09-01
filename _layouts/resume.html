@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ page.name }} — Resume</title>
-  <meta name="description" content="{{ page.name }}. {{ page.headline }}. {{ page.location }}.">
+  <title>{{ page.fullname }} — Resume</title>
+  <meta name="description" content="{{ page.fullname }}. {{ page.headline }}. {{ page.location }}.">
 
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="{{ page.name }} — Resume">
+  <meta property="og:title" content="{{ page.fullname }} — Resume">
   <meta property="og:description" content="{{ page.headline }}">
   <meta name="twitter:card" content="summary">
 
@@ -21,7 +21,7 @@
   <main class="sheet">
 
     <header class="masthead">
-      <h1>{{ page.name }}</h1>
+      <h1>{{ page.fullname }}</h1>
       {% if page.headline %}<p class="headline">{{ page.headline }}</p>{% endif %}
       <p class="contact">
         {% if page.location %}<span>{{ page.location }}</span>{% endif %}
