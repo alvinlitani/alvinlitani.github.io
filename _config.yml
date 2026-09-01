@@ -5,7 +5,7 @@ baseurl: ""
 url: ""
 
 title: "Alvin Litani Liauw — Resume"
-description: "Resume of Alvin Litani Liauw, AI/ML engineer based in Ottawa, Ontario."
+description: "Resume of Alvin Litani Liauw, machine learning engineer based in Ottawa, Ontario."
 
 markdown: kramdown
 kramdown:
