@@ -50,7 +50,7 @@ Canada, or remote.
 
 ## Experience
 
-### Accounts receivable support, part-time and remote
+### Accounts receivable support (part-time, remote)
 *PT Bangun Prima Sukses — 2025 to present, Jakarta, Indonesia*
 
 Construction materials supplier.
@@ -98,14 +98,15 @@ Early-stage startup with no dedicated technical support for the sales team.
 
 ## Education
 
-### Graduate certificate, artificial intelligence software development
-*Algonquin College — 2024 to 2025, Ottawa, Ontario*
+### Graduate Certificate in Artificial Intelligence Software Development
+*Algonquin College, Ontario, Canada*
+*2024-2025*
 
-### Graduate certificate, supply chain management
-*Algonquin College — 2023 to 2024, Ottawa, Ontario*
+### Graduate Certificate in Supply Chain Management
+*Algonquin College — 2023-2024, Ottawa, Ontario*
 
 ### Bachelor of Computer Science and Technology
-*University of Sydney — 2008 to 2011, Sydney, Australia*
+*University of Sydney — 2008-2011, Australia*
 
 ## Skills
 
