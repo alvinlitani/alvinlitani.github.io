@@ -12,21 +12,21 @@ contact:
     url: https://linkedin.com/in/alvin-litani
 ---
 
-Machine learning engineer focused on building and deploying ML systems: [time-series forecasting for wind generation](https://github.com/alvinlitani/wind-power-forecast) served through a FastAPI service on Google Cloud Run, retrieval-augmented generation over enterprise documentation, and computer vision similarity search. Three years of production infrastructure experience maintaining Java and Ruby applications, and four years in client-facing technical roles before the move into ML. Computer science graduate with a recent graduate certificate in AI software development from Algonquin College.
+Machine learning engineer focused on building and deploying ML systems: [time-series forecasting for wind generation](https://github.com/alvinlitani/wind-power-forecast) served through a FastAPI service on Google Cloud Run, retrieval-augmented generation over enterprise documentation, and computer vision similarity search. Nearly three years of production infrastructure experience maintaining Java and Ruby applications, and over four years in client-facing technical roles before the move into ML. Computer science graduate with a recent graduate certificate in AI software development from Algonquin College.
 
 Eligible to work in Canada without sponsorship. Open to relocation anywhere in Canada, or remote.
 
 ## Selected projects
 
 ### Wind power forecasting, Ontario
-*XGBoost, FastAPI, Google Cloud Run - [github.com/alvinlitani/wind-power-forecast](https://github.com/alvinlitani/wind-power-forecast) | [live API](https://wind-forecast-api-654769911920.us-central1.run.app/predictions/latest)*
+*XGBoost, FastAPI, Google Cloud Run - [github.com/alvinlitani/wind-power-forecast](https://github.com/alvinlitani/wind-power-forecast) | [live API](https://wind-forecast-api-654769911920.us-central1.run.app/predictions/ontario)*
 
 Day-ahead hourly forecasts for all 45 IESO-reporting wind plants in Ontario (4,943 MW, ~90% of provincial wind capacity). Per-site XGBoost models predict capacity factor and are trained on historical weather forecasts rather than actuals to avoid train/serve data mismatch. 11.3% capacity-weighted nMAE over a full-year 2025 test set (394,006 site-hours); 0.37 MAE skill score against a persistence baseline in live daily runs. Prefect Cloud schedules a Cloud Run Job writing to GCS, with a separate FastAPI service serving predictions and fail-closed data quality gates throughout.
 
 ### Celebrity face matching
 *facenet-pytorch, FAISS, Gradio - [github.com/alvinlitani/Celebrity-Face-Matching](https://github.com/alvinlitani/Celebrity-Face-Matching) | [live demo](https://huggingface.co/spaces/aliauw/celebrity-face-matching)*
 
-A computer vision app that takes a photo as input and find which celebrity in [CelebA dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) that you most resemble using face embeddings and nearest-neighbor search. It is built with facenet-pytorch and FAISS. Hosted on HuggingFace.
+A computer vision app that takes a personal photo as input and finds which celebrity in [CelebA dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) that the person most resemble using face embeddings and nearest-neighbor search. It is built with facenet-pytorch and FAISS. Hosted on HuggingFace.
 
 ### Product manual assistant
 *LangChain, ChromaDB, Hugging Face - [github.com/alvinlitani/RAG-for-Product-Manual-Assistant](https://github.com/alvinlitani/RAG-for-Product-Manual-Assistant) | [live demo](https://huggingface.co/spaces/aliauw/product-manual-assistant)*
@@ -57,7 +57,7 @@ IT consultancy building systems for government and business clients. Introducing
 - Ran multi-day LoRaWAN trials at 5 client sites (cellular base stations, a public water pipeline, a plantation, a frozen food warehouse, and a mining site) handling logistics and leading the on-site technical demonstrations.
 - Evaluated 20+ vendor hardware and software platforms for product-market fit against enterprise requirements in the Indonesian market.
 - Acted as technical point of contact across 4 enterprise accounts and coordinated 5-person teams spanning engineering, logistics, and sales.
-- Created technical pitch documents and supporting data analysis for business proposals to clients.   
+- Created technical pitch documents and supporting data analysis for business proposals to clients.
 
 ### Application administrator
 *PT Midtrans, Indonesia (2013-2015)*
