@@ -19,17 +19,17 @@ Eligible to work in Canada without sponsorship. Open to relocation anywhere in C
 ## Selected projects
 
 ### Wind power forecasting, Ontario
-*XGBoost, FastAPI, Google Cloud Run - [https://github.com/alvinlitani/wind-power-forecast](https://github.com/alvinlitani/wind-power-forecast) | [live API](https://wind-forecast-api-654769911920.us-central1.run.app/predictions/latest)*
+*XGBoost, FastAPI, Google Cloud Run - [github.com/alvinlitani/wind-power-forecast](https://github.com/alvinlitani/wind-power-forecast) | [live API](https://wind-forecast-api-654769911920.us-central1.run.app/predictions/latest)*
 
-Daily hourly forecasts of wind generation output for all 45 IESO-reporting wind generator plants in Ontario using XGBoost model. Access is provided through a small FastAPI service hosted on Google Cloud Run.
+Day-ahead hourly forecasts for all 45 IESO-reporting wind plants in Ontario (4,943 MW, ~90% of provincial wind capacity). Per-site XGBoost models predict capacity factor and are trained on historical weather forecasts rather than actuals to avoid train/serve data mismatch. 11.3% capacity-weighted nMAE over a full-year 2025 test set (394,006 site-hours); 0.37 MAE skill score against a persistence baseline in live daily runs. Prefect Cloud schedules a Cloud Run Job writing to GCS, with a separate FastAPI service serving predictions and fail-closed data quality gates throughout.
 
 ### Celebrity face matching
-*facenet-pytorch, FAISS, Gradio - [https://github.com/alvinlitani/Celebrity-Face-Matching](https://github.com/alvinlitani/Celebrity-Face-Matching) | [live demo](https://huggingface.co/spaces/aliauw/celebrity-face-matching)*
+*facenet-pytorch, FAISS, Gradio - [github.com/alvinlitani/Celebrity-Face-Matching](https://github.com/alvinlitani/Celebrity-Face-Matching) | [live demo](https://huggingface.co/spaces/aliauw/celebrity-face-matching)*
 
-A computer vision app that takes in photo as input and find which celebrity in [CelebA dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) that you most resemble using face embeddings and nearest-neighbor search. It is built with facenet-pytorch and FAISS. Hosted on HuggingFace.
+A computer vision app that takes a photo as input and find which celebrity in [CelebA dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) that you most resemble using face embeddings and nearest-neighbor search. It is built with facenet-pytorch and FAISS. Hosted on HuggingFace.
 
 ### Product manual assistant
-*LangChain, ChromaDB, Hugging Face - [https://github.com/alvinlitani/RAG-for-Product-Manual-Assistant](https://github.com/alvinlitani/RAG-for-Product-Manual-Assistant) | [live demo](https://huggingface.co/spaces/aliauw/product-manual-assistant)*
+*LangChain, ChromaDB, Hugging Face - [github.com/alvinlitani/RAG-for-Product-Manual-Assistant](https://github.com/alvinlitani/RAG-for-Product-Manual-Assistant) | [live demo](https://huggingface.co/spaces/aliauw/product-manual-assistant)*
 
 A RAG (Retrieval-Augmented Generation) chatbot that answers technical questions about product documentation. Built with LangChain v1, HuggingFace, and ChromaDB. Hosted on HuggingFace.
 
@@ -40,7 +40,7 @@ A RAG (Retrieval-Augmented Generation) chatbot that answers technical questions 
 
 Construction materials supplier.
 
-- Remote accounts receivable and reporting support alongside full-time study and portfolio work.
+- Remote accounts receivable and reporting support.
 
 ### Warehouse supervisor
 *PT Bangun Prima Sukses, Indonesia (2019-2023)*
@@ -51,23 +51,23 @@ Construction materials supplier.
 ### Technical manager
 *PT Perkasa Pilar Utama, Indonesia (2015-2019)*
 
-IT consultancy building systems for government and business clients. Introducing new Internet of Things/IoT (LoRaWAN) technology to the Indonesian market.
+IT consultancy building systems for government and business clients. Introducing new Internet of Things/IoT (LoRaWAN) technology to the Indonesian market. Continue to advise informally on their adoption of agentic coding tools (2025 – present).
 
-- Negotiated partnership and joint-venture agreements with global technology vendors across 4 countries including contract terms.
+- Negotiated partnership and joint-venture agreements including contract terms with global technology vendors across 4 countries.
 - Ran multi-day LoRaWAN trials at 5 client sites (cellular base stations, a public water pipeline, a plantation, a frozen food warehouse, and a mining site) handling logistics and leading the on-site technical demonstrations.
-- Evaluated 20+ vendor hardware and software for product-market fit against enterprise requirements in the Indonesian market.
-- Acted as technical point of contact across 4 enterprise accounts and coordinating 5-person teams spanning engineering, logistics, and sales.
+- Evaluated 20+ vendor hardware and software platforms for product-market fit against enterprise requirements in the Indonesian market.
+- Acted as technical point of contact across 4 enterprise accounts and coordinated 5-person teams spanning engineering, logistics, and sales.
 - Created technical pitch documents and supporting data analysis for business proposals to clients.   
 
 ### Application administrator
 *PT Midtrans, Indonesia (2013-2015)*
 
-Payment gateway processing card and bank transfers for hundreds of Indonesian e-commerce merchants. Part of the infrastructure team and two DevOps teams.
+Payment gateway processing card and bank transfers for hundreds of Indonesian e-commerce merchants. Part of the infrastructure team and 2 DevOps teams.
 
-- Monitored and tuned five Java and Ruby applications across three Linux servers, maintaining 99.9% uptime on live payment processing.
+- Monitored and tuned 5 Java and Ruby applications across 3 Linux servers, maintaining 99.9% uptime on live payment processing.
 - Introduced application performance telemetry with New Relic, cutting incident detection from hours to roughly 15 minutes.
-- Traced production failures through application and system logs across two DevOps teams to isolate root causes.
-- Deployed releases and ran rollbacks weekly, handling around two production incidents a week on a two-person on-call rotation.
+- Traced production failures through application and system logs to isolate root causes.
+- Deployed releases and ran rollbacks weekly, handling around 2 production incidents a week on a 2-person on-call rotation.
 - Supported the fraud monitoring team weekly by reviewing transaction logs for suspicious activity.
 
 ### Technical sales and merchant support
@@ -75,9 +75,9 @@ Payment gateway processing card and bank transfers for hundreds of Indonesian e-
 
 Early-stage startup with no dedicated technical support for the sales team.
 
-- Built and modified three PHP payment extensions for the Magento, Drupal, and WooCommerce e-commerce platforms.
-- Supported around two merchant integrations a week, working with client engineering teams to troubleshoot API and transaction failures.
-- Joined near-daily client meetings as the technical contact alongside sales, covering roughly four prospects a week.
+- Built and modified 3 PHP payment extensions for the Magento, Drupal, and WooCommerce e-commerce platforms.
+- Supported around 2 merchant integrations a week, working with client engineering teams to troubleshoot API and transaction failures.
+- Joined near-daily client meetings as the technical contact alongside sales, covering roughly 4 prospects a week.
 
 ## Education
 
@@ -92,12 +92,12 @@ Early-stage startup with no dedicated technical support for the sales team.
 
 ## Skills
 
-**Languages** — Python, SQL; Java, Ruby, PHP (working exposure)
+**Languages** - Python, SQL; Java, Ruby, PHP (working exposure)
 
-**Machine learning and AI** — PyTorch, scikit-learn, XGBoost, LangChain, ChromaDB, FAISS, facenet-pytorch, Hugging Face, pandas, NumPy
+**Machine learning and AI** - PyTorch, scikit-learn, XGBoost, LangChain, ChromaDB, FAISS, facenet-pytorch, Hugging Face, pandas, NumPy
 
-**Tools and infrastructure** — Linux, Docker, Git, FastAPI, Google Cloud Run, Hugging Face Spaces, Gradio, New Relic
+**Tools and infrastructure** - Linux, Docker, Git, FastAPI, Google Cloud Run, Hugging Face Spaces, Gradio, New Relic
 
-**Concepts** — Time-series forecasting, RAG, vector search, embeddings, LLM APIs, prompt engineering, NLP, sentiment analysis, computer vision
+**Concepts** - Time-series forecasting, RAG, vector search, embeddings, LLM APIs, prompt engineering, NLP, sentiment analysis, computer vision
 
-**Spoken languages** — English (professional), Indonesian (native)
+**Spoken languages** - English (professional), Indonesian (native)
