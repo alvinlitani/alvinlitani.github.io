@@ -42,6 +42,9 @@ Construction materials supplier.
 
 - Remote accounts receivable and reporting support.
 
+### Customer Service Associates (part-time)
+*Dollar Tree, Canada (2025-2026)*
+
 ### Warehouse supervisor
 *PT Bangun Prima Sukses, Indonesia (2019-2023)*
 
@@ -81,13 +84,13 @@ Early-stage startup with no dedicated technical support for the sales team.
 
 ## Education
 
-### Graduate Certificate in Artificial Intelligence Software Development
+**Graduate Certificate in Artificial Intelligence Software Development** 
 *Algonquin College, Ontario (2024-2025)*
 
-### Graduate Certificate in Supply Chain Management
+**Graduate Certificate in Supply Chain Management** 
 *Algonquin College, Ontario (2023-2024)*
 
-### Bachelor of Computer Science and Technology
+**Bachelor of Computer Science and Technology**
 *University of Sydney, Australia (2008-2011)*
 
 ## Skills
