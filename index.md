@@ -19,17 +19,17 @@ Eligible to work in Canada without sponsorship. Open to relocation anywhere in C
 ## Selected projects
 
 ### Wind power forecasting, Ontario
-*XGBoost, FastAPI, Google Cloud Run — [repository](https://github.com/alvinlitani/wind-power-forecast) · [live API](https://wind-forecast-api-654769911920.us-central1.run.app/predictions/latest)*
+*XGBoost, FastAPI, Google Cloud Run - [https://github.com/alvinlitani/wind-power-forecast](https://github.com/alvinlitani/wind-power-forecast) | [live API](https://wind-forecast-api-654769911920.us-central1.run.app/predictions/latest)*
 
 Daily hourly forecasts of wind generation output for all 45 IESO-reporting wind generator plants in Ontario using XGBoost model. Access is provided through a small FastAPI service hosted on Google Cloud Run.
 
 ### Celebrity face matching
-*facenet-pytorch, FAISS, Gradio — [repository](https://github.com/alvinlitani/Celebrity-Face-Matching) · [live demo](https://huggingface.co/spaces/aliauw/celebrity-face-matching)*
+*facenet-pytorch, FAISS, Gradio - [https://github.com/alvinlitani/Celebrity-Face-Matching](https://github.com/alvinlitani/Celebrity-Face-Matching) | [live demo](https://huggingface.co/spaces/aliauw/celebrity-face-matching)*
 
 A computer vision app that takes in photo as input and find which celebrity in [CelebA dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) that you most resemble using face embeddings and nearest-neighbor search. It is built with facenet-pytorch and FAISS. Hosted on HuggingFace.
 
 ### Product manual assistant
-*LangChain, ChromaDB, Hugging Face — [repository](https://github.com/alvinlitani/RAG-for-Product-Manual-Assistant) · [live demo](https://huggingface.co/spaces/aliauw/product-manual-assistant)*
+*LangChain, ChromaDB, Hugging Face - [https://github.com/alvinlitani/RAG-for-Product-Manual-Assistant](https://github.com/alvinlitani/RAG-for-Product-Manual-Assistant) | [live demo](https://huggingface.co/spaces/aliauw/product-manual-assistant)*
 
 A RAG (Retrieval-Augmented Generation) chatbot that answers technical questions about product documentation. Built with LangChain v1, HuggingFace, and ChromaDB. Hosted on HuggingFace.
 
