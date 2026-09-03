@@ -232,7 +232,7 @@ a:focus-visible {
 
   @page {
     size: letter;
-    margin: 0.55in 0.65in;
+    margin: 0.45in 0.5in;
   }
 
   html { font-size: 12px; }
@@ -243,8 +243,8 @@ a:focus-visible {
   }
 
   body {
-    font-size: 10.5pt;
-    line-height: 1.4;
+    font-size: 10pt;
+    line-height: 1.32;
   }
 
   .sheet {
@@ -280,17 +280,17 @@ a:focus-visible {
   .masthead + p { margin-top: 1rem; }
 
   h2 {
-    font-size: 10.5pt;
-    margin: 15pt 0 7pt;
-    padding-top: 6pt;
+    font-size: 10pt;
+    margin: 9pt 0 4pt;
+    padding-top: 4pt;
     border-top: 0.5pt solid #999;
     break-after: avoid;
     page-break-after: avoid;
   }
 
   h3 {
-    font-size: 11pt;
-    margin-top: 10pt;
+    font-size: 10.5pt;
+    margin-top: 5pt;
     break-after: avoid;
     page-break-after: avoid;
   }
@@ -302,12 +302,21 @@ a:focus-visible {
     page-break-after: avoid;
   }
 
+  /* Guard each bullet rather than the whole list: a five-bullet list that
+     cannot fit would otherwise jump to the next page and leave a hole. */
   ul {
+    break-inside: auto;
+    page-break-inside: auto;
+    margin-top: 3pt;
+  }
+
+  li {
+    margin-top: 1pt;
     break-inside: avoid;
     page-break-inside: avoid;
   }
 
-  li { margin-top: 2pt; }
+  p { margin-top: 3pt; }
 
   li, p {
     orphans: 3;
