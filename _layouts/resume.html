@@ -16,7 +16,9 @@
 </head>
 <body>
 
-  <button type="button" class="print-button" id="print-button">Print or save as PDF</button>
+  <a class="print-button"
+     href="{{ '/Alvin%20Litani%20Liauw%20Resume.pdf' | relative_url }}"
+     download="Alvin Litani Liauw Resume.pdf">Download PDF</a>
 
   <main class="sheet">
 
@@ -36,12 +38,6 @@
     <footer class="updated">Updated {{ site.time | date: "%B %Y" }}</footer>
 
   </main>
-
-  <script>
-    document.getElementById('print-button').addEventListener('click', function () {
-      window.print();
-    });
-  </script>
 
 </body>
 </html>

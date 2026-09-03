@@ -172,7 +172,8 @@ a:focus-visible {
 }
 
 /* ---------------------------------------------------------------
-   Print button
+   Download button — an anchor, not a button, so the border and
+   underline the link rules would otherwise apply are reset here.
    --------------------------------------------------------------- */
 
 .print-button {
@@ -185,6 +186,7 @@ a:focus-visible {
   border: 1px solid var(--rule);
   font-family: inherit;
   font-size: 0.875rem;
+  text-decoration: none;
   cursor: pointer;
   transition: border-color 120ms ease;
 }
