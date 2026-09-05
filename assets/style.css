@@ -1,9 +1,10 @@
 /* ---------------------------------------------------------------
    Tokens
-   Charter leads the stack deliberately: Matthew Carter drew it to
-   hold up at small sizes on low-resolution output, which is exactly
-   what a printed resume is. Cambria and Sitka cover Windows,
-   Georgia covers everything else.
+   Arial leads the stack for consistency rather than character: it is
+   present on Windows, macOS, and iOS, so the large majority of
+   readers see the same page. The fallbacks keep that going where it
+   is absent — Liberation Sans is metric-compatible with Arial, so
+   Linux holds the same line breaks, and Roboto covers Android.
    --------------------------------------------------------------- */
 
 :root {
@@ -14,8 +15,7 @@
   --rule:     #DCD7CD;
   --link:     #37476B;
 
-  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia,
-           "Times New Roman", serif;
+  --body: Arial, "Liberation Sans", Helvetica, Roboto, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -29,7 +29,7 @@ body {
   margin: 0;
   background: var(--desk);
   color: var(--ink);
-  font-family: var(--serif);
+  font-family: var(--body);
   font-size: 1.0625rem;
   line-height: 1.55;
   text-rendering: optimizeLegibility;
