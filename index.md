@@ -54,7 +54,7 @@ Construction materials supplier.
 ### Technical manager
 *PT Perkasa Pilar Utama, Indonesia (2015-2019)*
 
-IT consultancy building systems for government and business clients. Introducing new Internet of Things/IoT (LoRaWAN) technology to the Indonesian market. Continue to advise informally on their adoption of agentic coding tools (2025 – present).
+IT consultancy building systems for government and business clients. Introducing new Internet of Things/IoT (LoRaWAN) technology to the Indonesian market. Continue to advise informally on their adoption of agentic coding tools (2025-present).
 
 - Negotiated partnership and joint-venture agreements including contract terms with global technology vendors across 4 countries.
 - Ran multi-day LoRaWAN trials at 5 client sites (cellular base stations, a public water pipeline, a plantation, a frozen food warehouse, and a mining site) handling logistics and leading the on-site technical demonstrations.
