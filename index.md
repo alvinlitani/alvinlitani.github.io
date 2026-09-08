@@ -43,7 +43,6 @@ Self-directed development and deployment of production ML systems.
 - Sole engineer on three machine learning systems bringing them from design all the way to deployment. All three are live and open to the public.
 - The wind power forecasting project runs daily with no missed executions to date. Built monitoring and data quality safeguards that exit the run rather than publish predictions when the input data looks wrong.
 - Sourced and reconciled four public datasets that shared no common ID (grid operator records, a national turbine database, provincial filings, and weather data).
-- Compared the forecasts against a simple baseline and wrote up found limitations alongside the results
 
 ### Warehouse supervisor
 *PT Bangun Prima Sukses, Indonesia (2019-2023)*
@@ -71,7 +70,6 @@ Payment gateway processing card and bank transfers for hundreds of Indonesian e-
 - Introduced application performance telemetry with New Relic, cutting incident detection from hours to roughly 15 minutes.
 - Traced production failures through application and system logs to isolate root causes.
 - Deployed releases and ran rollbacks weekly, handling around 2 production incidents a week on a 2-person on-call rotation.
-- Supported the fraud monitoring team weekly by reviewing transaction logs for suspicious activity.
 
 ### Technical sales and merchant support
 *PT Midtrans, Indonesia (2012-2013)*
