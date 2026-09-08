@@ -12,7 +12,7 @@ contact:
     url: https://linkedin.com/in/alvin-litani
 ---
 
-Machine learning engineer focused on building and deploying ML systems: [time-series forecasting for wind generation](https://github.com/alvinlitani/wind-power-forecast) served through a FastAPI service on Google Cloud Run, retrieval-augmented generation over enterprise documentation, and computer vision similarity search. Nearly three years of production infrastructure experience maintaining Java and Ruby applications, and over four years in client-facing technical roles before the move into ML. Computer science graduate with a recent graduate certificate in AI software development from Algonquin College.
+Machine learning engineer focused on building and deploying ML systems: [time-series forecasting for wind generation](https://github.com/alvinlitani/wind-power-forecast) served through a FastAPI service on Google Cloud Run, retrieval-augmented generation over enterprise documentation, and computer vision similarity search. Returned to technical work in 2025 after moving to other fields, and recently finishing a graduate certificate in AI software development. Earlier background has nearly three years of production infrastructure experience maintaining Java and Ruby applications, and over four years in client-facing technical roles. 
 
 Eligible to work in Canada without sponsorship. Open to relocation anywhere in Canada, or remote.
 
@@ -35,15 +35,15 @@ A RAG (Retrieval-Augmented Generation) chatbot that answers technical questions 
 
 ## Experience
 
-### Accounts receivable support (part-time, remote)
-*PT Bangun Prima Sukses, Indonesia (2025-present)*
+### Machine Learning Engineer 
+*Independent, Ottawa, Ontario (2025–present)*
 
-Construction materials supplier.
+Self-directed development and deployment of production ML systems.
 
-- Remote accounts receivable and reporting support.
-
-### Customer Service Associates (part-time)
-*Dollar Tree, Canada (2024-2025)*
+- Sole engineer on three machine learning systems bringing them from design all the way to deployment. All three are live and open to the public.
+- The wind power forecasting project runs daily with no missed executions to date. Built monitoring and data quality safeguards that exit the run rather than publish predictions when the input data looks wrong.
+- Sourced and reconciled four public datasets that shared no common ID (grid operator records, a national turbine database, provincial filings, and weather data).
+- Compared the forecasts against a simple baseline and wrote up found limitations alongside the results
 
 ### Warehouse supervisor
 *PT Bangun Prima Sukses, Indonesia (2019-2023)*
