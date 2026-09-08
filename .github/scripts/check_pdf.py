@@ -27,17 +27,24 @@ for needed in ("Alvin Litani Liauw", "alvin.litani@gmail.com"):
     if needed not in text:
         failures.append(f"missing from extracted text: {needed!r}")
 
-# 2. Bullets must extract as markers at the start of their line. The marker is
-#    a CSS ::before with position:absolute, so it is drawn in a separate text
-#    run from the bullet body — if it lands after the text, a parser sees no
-#    list at all.
+# 2. Each bullet must extract as marker AND text on one line. Counting lines
+#    that merely start with the marker is not enough: when the ::before is
+#    taken out of the normal flow, the markers extract as their own lines and
+#    such a check passes while the list is in fact shredded.
 expected = len(re.findall(r"^- ", pathlib.Path("index.md").read_text(encoding="utf-8"), re.M))
-leading = len([ln for ln in text.splitlines() if ln.strip().startswith("•")])
+lines = text.splitlines()
+attached = len([ln for ln in lines if re.match(r"^\s*-\s+\S", ln)])
+orphan = len([ln for ln in lines if re.match(r"^\s*-\s*$", ln)])
 
-if expected and leading < expected * 0.6:
+if orphan:
     failures.append(
-        f"only {leading} of {expected} bullets extract with a leading marker; "
-        "the ::before marker is probably drawn out of order"
+        f"{orphan} bullet markers extract detached from their text; "
+        "the ::before marker has left the normal inline flow"
+    )
+
+if expected and attached < expected * 0.9:
+    failures.append(
+        f"only {attached} of {expected} bullets extract as marker + text on one line"
     )
 
 # 3. Real text, not a scan.
@@ -49,7 +56,7 @@ summary = [
     "",
     f"- Pages: **{pages}**",
     f"- Extracted characters: {len(text.strip())}",
-    f"- Bullets with leading marker: {leading} of {expected} in index.md",
+    f"- Bullets extracting as marker + text: {attached} of {expected}",
 ]
 
 if pages > 2:
