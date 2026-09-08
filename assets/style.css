@@ -123,10 +123,11 @@ h3 + p i { font-style: normal; }
 p { margin: 0.75rem 0 0; }
 
 /* ---------------------------------------------------------------
-   Lists — a bullet marker rather than the quieter en dash this
-   started with. Both extract from the PDF as real text, but applicant
-   tracking systems detect a list by looking for the conventional
-   glyphs at line start, and an en dash is not reliably one of them.
+   Lists — a plain ASCII hyphen rather than the quieter en dash this
+   started with. All of them extract from the PDF as real text, but
+   applicant tracking systems detect a list by looking for conventional
+   markers at line start, and a hyphen is the most portable of those:
+   no Unicode, nothing to mis-map in a font subset.
    --------------------------------------------------------------- */
 
 ul {
@@ -135,16 +136,21 @@ ul {
   list-style: none;
 }
 
+/* The marker must stay in the normal inline flow. An absolutely positioned
+   ::before is painted as its own text run, and every extractor then reports
+   the markers detached from their bullets — seventeen stray dots followed by
+   seventeen orphaned sentences. A hanging indent gets the same look while
+   keeping marker and text in one run. The 1.167em is measured: the hyphen
+   plus three no-break spaces is exactly that wide, so wrapped lines align
+   under the first. */
 li {
-  position: relative;
   margin: 0.4rem 0 0;
-  padding-left: 1.1em;
+  padding-left: 1.167em;
+  text-indent: -1.167em;
 }
 
 li::before {
-  content: "\2022";
-  position: absolute;
-  left: 0;
+  content: "-\00a0\00a0\00a0";
   color: var(--ink-soft);
 }
 
