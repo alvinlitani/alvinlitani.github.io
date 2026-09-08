@@ -95,10 +95,10 @@ Early-stage startup with no dedicated technical support for the sales team.
 
 **Languages** - Python, SQL; Java, Ruby, PHP (working exposure)
 
-**Machine learning and AI** - PyTorch, scikit-learn, XGBoost, LangChain, ChromaDB, FAISS, facenet-pytorch, Hugging Face, pandas, NumPy
+**Machine learning and AI** - PyTorch, facenet-pytorch, scikit-learn, XGBoost, LangChain, ChromaDB, FAISS, Hugging Face, Pandas, NumPy
 
-**Tools and infrastructure** - Linux, Docker, Git, FastAPI, Google Cloud Run, Hugging Face Spaces, Gradio, New Relic
+**Tools and infrastructure** - Linux, Docker, Git, FastAPI, Google Cloud Run, Hugging Face Spaces, Gradio, New Relic, Prefect, Weights & Biases, Google Cloud Storage
 
-**Concepts** - Time-series forecasting, RAG, vector search, embeddings, LLM APIs, prompt engineering, NLP, sentiment analysis, computer vision
+**Concepts** - Time-series forecasting, RAG, vector databases, embeddings, LLM APIs, prompt engineering, NLP, sentiment analysis, computer vision
 
 **Spoken languages** - English (professional), Indonesian (native)
