@@ -243,9 +243,13 @@ a:focus-visible {
 
 @media print {
 
+  /* The content overshot two pages by under a tenth of an inch, and the
+     flip point measures at 0.41in of bottom margin. 0.35in top and bottom
+     clears it with room to spare rather than landing on the edge, and
+     stays well inside the ~0.25in most printers cannot reach. */
   @page {
     size: letter;
-    margin: 0.45in 0.5in;
+    margin: 0.35in 0.5in;
   }
 
   html { font-size: 12px; }
