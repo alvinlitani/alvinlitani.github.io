@@ -1,0 +1,80 @@
+name: Build resume
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.md'
+      - 'assets/style.css'
+      - '_layouts/resume.html'
+      - '_config.yml'
+      - '.github/workflows/resume.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-resume
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      # The stylesheet asks for Arial first. Ubuntu has no Arial, and while
+      # Liberation Sans is metric-compatible (same line breaks, same page
+      # count), installing the real fonts keeps the PDF's glyphs identical
+      # to what a Windows or macOS reader sees on the site.
+      - name: Install Microsoft core fonts
+        run: |
+          echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true \
+            | sudo debconf-set-selections
+          sudo apt-get update
+          sudo apt-get install -y ttf-mscorefonts-installer
+          sudo fc-cache -f
+
+      - name: Build the site
+        run: bundle exec jekyll build
+
+      # Must be served over HTTP, not opened as file://. The layout requests
+      # /assets/style.css as an absolute path; under file:// that resolves to
+      # the filesystem root, the CSS silently fails to load, and the PDF comes
+      # out unstyled and several pages longer.
+      - name: Serve the built site
+        run: |
+          python3 -m http.server 4000 --directory _site &
+          for i in $(seq 1 20); do
+            curl -fsS -o /dev/null http://localhost:4000/ && exit 0
+            sleep 0.5
+          done
+          echo "site did not come up" >&2
+          exit 1
+
+      - name: Render PDF
+        run: |
+          google-chrome --headless=new --disable-gpu --no-sandbox \
+            --no-pdf-header-footer \
+            --print-to-pdf="Alvin Litani Liauw Resume.pdf" \
+            http://localhost:4000/
+          ls -l "Alvin Litani Liauw Resume.pdf"
+
+      - name: Check the PDF is parseable
+        run: |
+          pip install --quiet pdfminer.six
+          python3 .github/scripts/check_pdf.py "Alvin Litani Liauw Resume.pdf"
+
+      - name: Commit the rebuilt PDF
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add "Alvin Litani Liauw Resume.pdf"
+          git diff --staged --quiet || git commit -m 'Rebuild resume PDF'
+          git push
