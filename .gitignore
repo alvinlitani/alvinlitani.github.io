@@ -1,0 +1,6 @@
+# Outputs of .github/scripts/preview.py, which builds the resume PDF locally.
+# These travel with the repo because the script does: anyone running it,
+# including you on another machine, wants them ignored.
+preview.pdf
+_preview/
+.github/scripts/.venv/
