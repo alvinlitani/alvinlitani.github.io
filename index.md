@@ -44,13 +44,13 @@ Self-directed development and deployment of production ML systems.
 - The wind power forecasting project runs daily with no missed executions to date. Built monitoring and data quality safeguards that exit the run rather than publish predictions when the input data looks wrong.
 - Sourced and reconciled four public datasets that shared no common ID (grid operator records, a national turbine database, provincial filings, and weather data).
 
-### Warehouse supervisor
+### Warehouse Supervisor
 *PT Bangun Prima Sukses, Indonesia (2019-2023)*
 
 - Supervised a team of 10+ and a fleet of 8 delivery trucks covering scheduling, training, and day-to-day performance management.
 - Coordinated delivery schedules to 20+ active construction sites.
 
-### Technical manager
+### Technical Manager
 *PT Perkasa Pilar Utama, Indonesia (2015-2019)*
 
 IT consultancy building systems for government and business clients. Introducing new Internet of Things/IoT (LoRaWAN) technology to the Indonesian market. Continue to advise informally on their adoption of agentic coding tools (2025-present).
@@ -61,7 +61,7 @@ IT consultancy building systems for government and business clients. Introducing
 - Acted as technical point of contact across 4 enterprise accounts and coordinated 5-person teams spanning engineering, logistics, and sales.
 - Created technical pitch documents and supporting data analysis for business proposals to clients.
 
-### Application administrator
+### Application Administrator
 *PT Midtrans, Indonesia (2013-2015)*
 
 Payment gateway processing card and bank transfers for hundreds of Indonesian e-commerce merchants. Part of the infrastructure team and 2 DevOps teams.
@@ -71,7 +71,7 @@ Payment gateway processing card and bank transfers for hundreds of Indonesian e-
 - Traced production failures through application and system logs to isolate root causes.
 - Deployed releases and ran rollbacks weekly, handling around 2 production incidents a week on a 2-person on-call rotation.
 
-### Technical sales and merchant support
+### Technical Sales / Merchant Support
 *PT Midtrans, Indonesia (2012-2013)*
 
 Early-stage startup with no dedicated technical support for the sales team.
