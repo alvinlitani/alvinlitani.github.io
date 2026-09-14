@@ -12,7 +12,7 @@ contact:
     url: https://linkedin.com/in/alvin-litani
 ---
 
-Engineer with three years of production infrastructure experience maintaining Java and Ruby applications, and over four years in client‐facing technical roles. Recently moved into ML systems: time‐series forecasting for wind generation served through a FastAPI service on Google Cloud Run, retrieval‐augmented generation over enterprise documentation, and computer vision similarity search.  Computer science graduate with a recent graduate certificate in AI software development. Eligible to work in Canada without sponsorship. Open to relocation anywhere in Canada, or remote.
+Engineer with production support and client integration experience: maintaining Java and Ruby applications, and supporting merchant integrations. Over four years in client‐facing technical roles. Now building ML systems: time‐series forecasting for wind generation served through a FastAPI service on Google Cloud Run, retrieval‐augmented generation over enterprise documentation, and computer vision similarity search.  Computer science graduate with a recent graduate certificate in AI software development. Eligible to work in Canada without sponsorship. Open to relocation anywhere in Canada, or remote.
 
 ## Selected projects
 
