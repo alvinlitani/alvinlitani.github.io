@@ -1,7 +1,7 @@
 ---
 layout: resume
 fullname: Alvin Litani Liauw
-headline: Machine learning engineer
+headline: Support and integration engineer who builds and deploys ML systems
 location: Ottawa, Ontario, Canada
 contact:
   - text: alvin.litani@gmail.com
@@ -12,9 +12,7 @@ contact:
     url: https://linkedin.com/in/alvin-litani
 ---
 
-Machine learning engineer focused on building and deploying ML systems: [time-series forecasting for wind generation](https://github.com/alvinlitani/wind-power-forecast) served through a FastAPI service on Google Cloud Run, retrieval-augmented generation over enterprise documentation, and computer vision similarity search. Returned to technical work in 2025 after moving to other fields, and recently finishing a graduate certificate in AI software development. Earlier background has nearly three years of production infrastructure experience maintaining Java and Ruby applications, and over four years in client-facing technical roles. 
-
-Eligible to work in Canada without sponsorship. Open to relocation anywhere in Canada, or remote.
+Engineer with three years of production infrastructure experience maintaining Java and Ruby applications, and over four years in client‐facing technical roles. Recently moved into ML systems: time‐series forecasting for wind generation served through a FastAPI service on Google Cloud Run, retrieval‐augmented generation over enterprise documentation, and computer vision similarity search.  Computer science graduate with a recent graduate certificate in AI software development. Eligible to work in Canada without sponsorship. Open to relocation anywhere in Canada, or remote.
 
 ## Selected projects
 
@@ -35,7 +33,7 @@ A RAG (Retrieval-Augmented Generation) chatbot that answers technical questions 
 
 ## Experience
 
-### Machine Learning Engineer 
+### AI Software Developer
 *Independent, Ottawa, Ontario (2025–present)*
 
 Self-directed development and deployment of production ML systems.
